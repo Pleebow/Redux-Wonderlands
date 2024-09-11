@@ -46,6 +46,8 @@
 					<h2>Radiance</h2>
 					<div>
 						<em data-base="+6" data-pct="true"></em> <span class="gold">Maximum Ward Capacity</span><span class="perLevel"> per level</span>
+						<em data-base="-8" data-pct="true"></em> <span class="gold">Ward Recharge Delay</span><span class="perLevel"> per level</span>
+						<em data-base="+6" data-pct="true"></em> <span class="gold">Ward Recharge Rate</span><span class="perLevel"> per level</span>
 					</div>
 				</div>
 				<div class="points"></div>
@@ -98,6 +100,7 @@
 					<h2>Dragon's Fury</h2>
 					<div>
 						The Fatemaker gains increased <span class="gold">Ability Damage</span> for each equiped weapon, shield, melee and spellmod(s) that matches the element of the currently held weapon.
+						<br><span class="gold">Ability Damage: </span> <em data-base="2" data-fixed="true" data-pct="true"></em> per matching item.
 					</div>
 				</div>
 				<div class="points"></div>
@@ -140,7 +143,16 @@
 			</div>
 		</div>
 		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="hidden skill"></div>
+			<div class="skill" data-points="0" data-max="3">
+				<div class="description">
+					<h2>Resistance is Futile</h2>
+					<div>
+						<span class="gold">Kill Skill:</span> Whenever the Fatemaker kills an enemy, all <span class="gold">Elemental Resistances</span> are ignored.
+						<br><br><span class="gold">Duration:</span> 6 seconds
+					</div>
+				</div>
+				<div class="points"></div>
+			</div>
 			<div class="skill" data-points="0" data-max="3">
 				<div class="description">
 					<h2>Awe</h2>
@@ -168,7 +180,18 @@
 			</div>
 		</div>
 		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="hidden skill"></div>
+			<div class="skill" data-points="0" data-max="1">
+				<div class="description">
+					<h2>Soulfire</h2>
+					<div>
+						<span class="gold">ABILITY AUGMENT</span>
+						<br><br>Hitting enemies with <span class="orange">Cleansing Flames' Nova</span> cleanses the Fatemaker of all status effects and inflicts <span class="gold">Soulfire</span> to enemies hit. Enemies afflicted by <span class="gold">Soulfire</span> take more <span class="blue">Lightning</span> and <span class="red">Fire</span> damage.
+						<br/><br/><span class="gold">Lightning & Fire Debuff: </span><em data-base="20" data-fixed="true" data-pct="true"></em>
+						<br><span class="gold">Soulfire Duration:</span> 8 seconds
+					</div>
+				</div>
+				<div class="points"></div>
+			</div>
 			<div class="skill" data-points="0" data-max="1">
 				<div class="description">
 					<h2>Storm Smite</h2>
@@ -178,7 +201,17 @@
 				</div>
 				<div class="points"></div>
 			</div>
-			<div class="hidden skill"></div>
+			<div class="skill" data-points="0" data-max="1">
+				<div class="description">
+					<h2>Storm Smite</h2>
+					<div>
+						<span class="gold">ABILITY AUGMENT</span>
+						<br><br>Deal increased damage to enemies farther away with <span class="orange">Storm Dragon's Judgment.</span>
+						<br/><br/><span class="gold">Bonus Damage Dealt at 30m:: </span><em data-base="30" data-fixed="true" data-pct="true"></em>
+					</div>
+				</div>
+				<div class="points"></div>
+			</div>
 		</div>
 	</div>
 	<div class="totalPoints">0</div>
