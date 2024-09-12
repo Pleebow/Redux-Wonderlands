@@ -4,7 +4,7 @@
 		<div>
 			The Fatemaker summons an <span class="orange">Ethereal Bow</span>, firing <span class="orange">7 Arrows</span> that deal <span class="gold">Ability Damage</span> on impact. <span class="orange">Arrows</span> <span class="gold">Ricochet</span> twice between nearby enemies.
 			<br><br><span class="orange">Barrage</span> has multiple charges. Increases to <span class="gold">Gun Damage</span> apply to damage dealt by <span class="orange">Barrage</span>.
-			<br><br><span class="gold">Cooldown:</span> 30 seconds
+			<br><br><span class="gold">Cooldown:</span> 20 seconds
 			<br><span class="gold">Charges:</span> 3
 		</div>
 	</div>
@@ -15,7 +15,7 @@
 		<h2>Blizzard</h2>
 		<div>
 			The Fatemaker creates 3 <span class="cyan">Frost Cyclones</span> for a duration that seek out nearby enemies, dealing <span class="cyan">Frost Ability Damage</span> over time.
-			<br><br><span class="gold">Cooldown:</span> 35 seconds
+			<br><br><span class="gold">Cooldown:</span> 30 seconds
 			<br><span class="gold">Duration:</span> 16 seconds
 		</div>
 	</div>
@@ -25,7 +25,7 @@
 	Mushroom Companion: The Fatemaker is accompanied by a <span class="orange">Mushroom Companion</span> that targets nearby enemies and deals <span class="green">Poison Damage</span>.
 	Pinging an enemy will cause your <span class="orange">Mushroom Companion</span> to lunge towards the target.
 	Any increases to the Fatemaker's <span class="gold">Damage</span> also apply to their <span class="gold">Companions</span>.
-	<br><br><span class="gold">Respawn Cooldown:</span> 45 seconds
+	<br><br><span class="gold">Respawn Cooldown:</span> 30 seconds
 </div>
 <div class="skillTree">
 	<div class="bgLayer"></div>
@@ -58,7 +58,7 @@
 					<h2>Eagle Eye</h2>
 					<div>
 						<em data-base="+4" data-fixed="true" data-pct="true"></em> <span class="gold">Gun Damage</span><span class="perLevel"> per level</span>
-						<br><em data-base="+5" data-fixed="true" data-pct="true"></em> <span class="gold">Gun Handling</span><span class="perLevel"> per level</span>
+						<br><em data-base="+10" data-fixed="true" data-pct="true"></em> <span class="gold">Gun Handling</span><span class="perLevel"> per level</span>
 					</div>
 				</div>
 				<div class="points"></div>
@@ -89,8 +89,8 @@
 				<div class="description">
 					<h2>Bullseye</h2>
 					<div>
-						<em data-base="+12" data-fixed="true" data-pct="true"></em> <span class="gold">Gun Critical Hit Chance</span><span class="perLevel"> per level</span>
-						<br><em data-base="+12" data-fixed="true" data-pct="true"></em> <span class="gold">Companion Critical Hit Chance</span><span class="perLevel"> per level</span>
+						<em data-base="+20" data-fixed="true" data-pct="true"></em> <span class="gold">Gun Critical Hit Chance</span><span class="perLevel"> per level</span>
+						<br><em data-base="+20" data-fixed="true" data-pct="true"></em> <span class="gold">Companion Critical Hit Chance</span><span class="perLevel"> per level</span>
 					</div>
 				</div>
 				<div class="points"></div>
@@ -103,8 +103,10 @@
 					<div>
 						<span class="gold">Magazine Size</span> is increased.
 						<br><br>The Fatemaker's currently equipped weapon <span class="gold">regenerates ammo</span> over time.
+						<br><br> The Fatemaker deals increased damage with the <span class="gold">First Shot</span> in the clip.
+						<br><br><span class="gold">First Shot Bouns Damage:</span> <em data-base="+7" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
 						<br><br><span class="gold">Magazine Size:</span> <em data-base="+10" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
-						<br><span class="gold">Ammo Regeneration:</span> <em data-base="1" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per second
+						<br><span class="gold">Ammo Regeneration:</span> <em data-base="1.7" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per second
 					</div>
 				</div>
 				<div class="points"></div>
@@ -137,7 +139,16 @@
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="hidden skill"></div>
+			<div class="skill" data-points="0" data-max="1">
+				<div class="description">
+					<h2>Headhunter</h2>
+					<div>
+						<span class="gold">Gun Damage</span> Dealt to <span class="gold">Critical Hit Areas</span> is increased.
+						<br><br><span class="gold">Gun Damage:</span> <em data-base="+25" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
+					</div>
+				</div>
+				<div class="points"></div>
+			</div>
 			<div class="skill" data-points="0" data-max="3">
 				<div class="description">
 					<h2>Thrill of the Hunt</h2>
@@ -155,10 +166,11 @@
 				<div class="description">
 					<h2>Called Shot</h2>
 					<div>
-						While aiming down sights, the Fatemaker gains increased <span class="gold">Gun Damage</span> and <span class="gold">Damage Resistance</span> each second.
-						<br><br><span class="gold">Gun Damage:</span> <em data-base="+1.8" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
-						<br><span class="gold">Damage Resistance:</span> <em data-base="+1.8" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
-						<br><span class="gold">Max Stacks:</span> 10
+						While aiming down sights, the Fatemaker gains increased <span class="gold">Gun Damage</span> and <span class="gold">Damage Resistance</span> each second. <span class="gold">Sniper Rifles</span> gain an additional damage boost of equal value.
+						<br><br><span class="gold">Gun Damage:</span> <em data-base="+3.3" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
+						<br><span class="gold">Sniper Rifle Damage:</span> <em data-base="+3.3" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
+						<br><span class="gold">Damage Resistance:</span> <em data-base="+4.5" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span> per stack
+						<br><span class="gold">Max Stacks:</span> 3
 					</div>
 				</div>
 				<div class="points"></div>
@@ -177,19 +189,32 @@
 				<div class="points"></div>
 			</div>
 			<div class="hidden skill"></div>
-			<div class="skill" data-points="0" data-max="1">
+			<div class="skill" data-points="0" data-max="3">
 				<div class="description">
-					<h2>Headhunter</h2>
+					<h2>Free-Load</h2>
 					<div>
-						<span class="gold">Gun Damage</span> dealt to <span class="gold">Critical Hit Areas</span> is increased.
-						<br><br><span class="gold">Gun Damage:</span> +25.0%
+						The Fatemaker's weapons won't consume any ammo every other shot. These shots deal bonus <span class="gold">Amp</span> damage.
+						<br><br><span class="gold">Triggers every</span> <em data-base="4" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
+						<br><br><span class="gold">Gun Damage:</span> +30.0%
 					</div>
 				</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="hidden skill"></div>
+			<div class="skill" data-points="0" data-max="1">
+				<div class="description">
+					<h2>Ethereal Bow</h2>
+					<div>
+						<span class="gold">ABILITY AUGMENT</span>
+						<br><br>Hitting enemies with <span class="gold">Barrage</span> significantly decreases their <span class="gold">Attack Speed</span> for 5s. Additionally, enemies take increased damage from <span class="gold">Sniper Rifles.</span>
+						<br><br><span class="gold">Enemy Attack Speed:</span> <em data-base="-75" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
+						<br><span class="gold">Sniper Rifle Debuff:</span> <em data-base="+20" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
+						<br><span class="gold">Duration:</span> 5 seconds
+					</div>
+				</div>
+				<div class="points"></div>
+			</div>
 			<div class="skill" data-points="0" data-max="1">
 				<div class="description">
 					<h2>Play the Angles</h2>
@@ -203,7 +228,15 @@
 				</div>
 				<div class="points"></div>
 			</div>
-			<div class="hidden skill"></div>
+			<div class="description">
+					<h2>Maelstrom</h2>
+					<div>
+						<span class="gold">ABILITY AUGMENT</span>
+						<br><br>Whenever an enemy is affected by a Frost status effect, there's a chance for <span class="orange">Blizzard</span> to deal <span class="gold">Bonus Elemental Damage</span> of any type, including <span class="purple">Void,</span> which targets only the <span class="red">Health</span> Bar of the enemy.
+						<br><br><span class="gold">Bonus Elemental Damage:</span> <em data-base="+20" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
+						<br><span class="gold">Bonus Elemental Damage Chance:</span> <em data-base="+10" data-fixed="true" data-pct="true"></em><span class="perLevel"> per level</span>
+					</div>
+				</div>
 		</div>
 	</div>
 	<div class="totalPoints">0</div>
